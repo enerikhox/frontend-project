@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.core.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.theme.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/glide.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1><a href="index1.html">CarsMatics</a></h1>
+
+        <nav>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Welcome CarsMatics</h1>
+          <p>Here you can find all the products your car needs</p>
+        </div>
+      </section>
+
+      <section class="image-section">
+        <div class="image-item large-image">
+          <img src="dummy_600x400_ffffff_cccccc (1).png" alt="Image 1" />
+        </div>
+        <div class="image-item">
+          <img src="dummy_300x200_ffffff_cccccc.png" alt="Image 2" />
+        </div>
+        <div class="image-item">
+          <img src="dummy_300x200_ffffff_cccccc (2).png" alt="Image 3" />
+        </div>
+      </section>
+      <section class="items-section">
+        <div class="item">
+          <img src="dummy_300x200_ffffff_cccccc.png" height="100" alt="" />
+          <button>Shop Now</button>
+        </div>
+        <div class="item">
+          <img src="dummy_300x200_ffffff_cccccc.png" height="100" alt="" />
+          <button>Shop Now</button>
+        </div>
+        <div class="item">
+          <img src="dummy_300x200_ffffff_cccccc.png" height="100" alt="" />
+          <button>Shop Now</button>
+        </div>
+        <div class="item">
+          <img src="dummy_300x200_ffffff_cccccc.png" height="100" alt="" />
+          <button>Shop Now</button>
+        </div>
+      </section>
+      <section>
+        <div id="glide" class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <a href="www.google.com" class="buy-button">Buy</a>
+                <img
+                  src="dummy_300x200_ffffff_cccccc.png"
+                  height="100"
+                  alt="product"
+                />
+              </li>
+              <li class="glide__slide">
+                <a href="www.google.com" class="buy-button">Buy</a>
+                <img
+                  src="dummy_300x200_ffffff_cccccc.png"
+                  height="100"
+                  alt="product"
+                />
+              </li>
+              <li class="glide__slide">
+                <a href="www.google.com" class="buy-button">Buy</a>
+                <img
+                  src="dummy_300x200_ffffff_cccccc.png"
+                  height="100"
+                  alt="product"
+                />
+              </li>
+              <li class="glide__slide">
+                <a href="www.google.com" class="buy-button">Buy</a>
+                <img
+                  src="dummy_300x200_ffffff_cccccc.png"
+                  height="100"
+                  alt="product"
+                />
+              </li>
+              <li class="glide__slide">
+                <a href="www.google.com" class="buy-button">Buy</a>
+                <img
+                  src="dummy_300x200_ffffff_cccccc.png"
+                  height="100"
+                  alt="product"
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              prev
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              next
+            </button>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <script>
+        var glide = new Glide("#glide", {
+          type: "carousel",
+          startAt: 0,
+          perView: 4,
+          animationDuration: 800,
+          animationTimingFunc: "cubic-bezier(0.165, 0.840, 0.440, 0.840)",
+        });
+
+        glide.mount();
+      </script>
+    </div>
+  </body>
+</html>

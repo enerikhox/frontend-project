@@ -1,0 +1,63 @@
+.image-section {
+    height: 360px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50% 50%;
+    grid-gap: 10px; /* Adjust gap between images */
+    grid-template-columns: 60% 40%
+}
+
+.image-item {
+    overflow: hidden; /* Ensure images don't overflow their containers */
+}
+
+.image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images cover their respective containers */
+}
+
+.large-image {
+    grid-row: 1 / span 2; /* Make the large image span both columns */
+    grid-column: 1; /* Make the large image take up the top row */
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+
+.items-section img {
+    width: 100%;
+    height: 100%;
+}
+
+.item{
+    align-items: center;
+}
+
+.items-section button{
+    width: 200px;
+    height: 40px;
+}
+
+.items-section {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .item {
+    max-width: 200px;
+    height: 100px;
+    margin: 0px 20px 60px 0px;
+    background-color:black;
+    flex: 1 0 22%; /* This sets the initial width of each item to 22% */
+  }
+
+ul{
+  display: flex;
+  gap: 30px;
+}
